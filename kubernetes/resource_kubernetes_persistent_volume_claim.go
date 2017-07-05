@@ -128,6 +128,12 @@ func resourceKubernetesPersistentVolumeClaim() *schema.Resource {
 							ForceNew:    true,
 							Computed:    true,
 						},
+						"storage_class_name": {
+							Type:        schema.TypeString,
+							Description: "Name of the storage class requested by the claim",
+							Optional:    true,
+							ForceNew:    true,
+						},
 					},
 				},
 			},
